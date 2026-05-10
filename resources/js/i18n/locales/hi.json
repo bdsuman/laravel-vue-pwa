@@ -1,0 +1,66 @@
+{
+  "auth": {
+    "login": "लॉगिन",
+    "register": "रजिस्टर",
+    "logout": "लॉगआउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "rememberMe": "मुझे याद रखें",
+    "forgotPassword": "पासवर्ड भूल गए?"
+  },
+  "nav": {
+    "dashboard": "डैशबोर्ड",
+    "posts": "पोस्ट",
+    "categories": "श्रेणियां",
+    "settings": "सेटिंग्स"
+  },
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "create": "बनाएं",
+    "update": "अपडेट करें",
+    "search": "खोजें",
+    "filter": "फ़िल्टर",
+    "loading": "लोड हो रहा है...",
+    "noData": "कोई डेटा नहीं मिला",
+    "success": "सफल",
+    "error": "त्रुटि",
+    "confirmDelete": "क्या आप वाकई हटाना चाहते हैं?"
+  },
+  "posts": {
+    "title": "पोस्ट",
+    "createPost": "पोस्ट बनाएं",
+    "editPost": "पोस्ट संपादित करें",
+    "postTitle": "शीर्षक",
+    "postContent": "सामग्री",
+    "category": "श्रेणी",
+    "publish": "प्रकाशित",
+    "draft": "ड्राफ्ट",
+    "published": "प्रकाशित"
+  },
+  "categories": {
+    "title": "श्रेणियां",
+    "createCategory": "श्रेणी बनाएं",
+    "name": "नाम"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "totalPosts": "कुल पोस्ट",
+    "totalCategories": "कुल श्रेणियां",
+    "publishedPosts": "प्रकाशित पोस्ट"
+  },
+  "upload": {
+    "selectFile": "फ़ाइल चुनें",
+    "uploadFile": "अपलोड",
+    "dragDrop": "फ़ाइल यहां खींचें",
+    "browse": "ब्राउज़"
+  },
+  "validation": {
+    "required": "यह फ़ील्ड आवश्यक है",
+    "email": "कृपया एक वैध ईमेल दर्ज करें",
+    "min": "न्यूनतम :min वर्ण आवश्यक",
+    "max": "अधिकतम :max वर्ण अनुमत"
+  }
+}

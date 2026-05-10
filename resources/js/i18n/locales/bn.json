@@ -1,0 +1,66 @@
+{
+  "auth": {
+    "login": "লগইন",
+    "register": "রেজিস্টার",
+    "logout": "লগআউট",
+    "email": "ইমেইল",
+    "password": "পাসওয়ার্ড",
+    "rememberMe": "মনে রাখুন",
+    "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?"
+  },
+  "nav": {
+    "dashboard": "ড্যাশবোর্ড",
+    "posts": "পোস্ট",
+    "categories": "বিভাগ",
+    "settings": "সেটিংস"
+  },
+  "common": {
+    "save": "সংরক্ষণ",
+    "cancel": "বাতিল",
+    "delete": "মুছুন",
+    "edit": "সম্পাদনা",
+    "create": "তৈরি",
+    "update": "হালনাগাদ",
+    "search": "অনুসন্ধান",
+    "filter": "ফিল্টার",
+    "loading": "লোড হচ্ছে...",
+    "noData": "কোনো তথ্য পাওয়া যায়নি",
+    "success": "সফল",
+    "error": "ত্রুটি",
+    "confirmDelete": "মুছে ফেলতে চান?"
+  },
+  "posts": {
+    "title": "পোস্ট",
+    "createPost": "পোস্ট তৈরি",
+    "editPost": "পোস্ট সম্পাদনা",
+    "postTitle": "শিরোনাম",
+    "postContent": "বিষয়বস্তু",
+    "category": "বিভাগ",
+    "publish": "প্রকাশ",
+    "draft": "খসড়া",
+    "published": "প্রকাশিত"
+  },
+  "categories": {
+    "title": "বিভাগসমূহ",
+    "createCategory": "বিভাগ তৈরি",
+    "name": "নাম"
+  },
+  "dashboard": {
+    "title": "ড্যাশবোর্ড",
+    "totalPosts": "মোট পোস্ট",
+    "totalCategories": "মোট বিভাগ",
+    "publishedPosts": "প্রকাশিত পোস্ট"
+  },
+  "upload": {
+    "selectFile": "ফাইল নির্বাচন",
+    "uploadFile": "আপলোড",
+    "dragDrop": "ফাইল এখানে টেনে আনুন",
+    "browse": "ব্রাউজ"
+  },
+  "validation": {
+    "required": "এই তথ্য প্রয়োজন",
+    "email": "সঠিক ইমেইল দিন",
+    "min": "ন্যূনতম :min অক্ষর প্রয়োজন",
+    "max": "সর্বোচ্চ :max অক্ষর অনুমোদিত"
+  }
+}

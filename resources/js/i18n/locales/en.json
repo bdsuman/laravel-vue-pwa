@@ -1,0 +1,66 @@
+{
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "posts": "Posts",
+    "categories": "Categories",
+    "settings": "Settings"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "search": "Search",
+    "filter": "Filter",
+    "loading": "Loading...",
+    "noData": "No data found",
+    "success": "Success",
+    "error": "Error",
+    "confirmDelete": "Are you sure you want to delete?"
+  },
+  "posts": {
+    "title": "Posts",
+    "createPost": "Create Post",
+    "editPost": "Edit Post",
+    "postTitle": "Title",
+    "postContent": "Content",
+    "category": "Category",
+    "publish": "Publish",
+    "draft": "Draft",
+    "published": "Published"
+  },
+  "categories": {
+    "title": "Categories",
+    "createCategory": "Create Category",
+    "name": "Name"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalPosts": "Total Posts",
+    "totalCategories": "Total Categories",
+    "publishedPosts": "Published Posts"
+  },
+  "upload": {
+    "selectFile": "Select File",
+    "uploadFile": "Upload",
+    "dragDrop": "Drag and drop file here",
+    "browse": "Browse"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "min": "Minimum :min characters required",
+    "max": "Maximum :max characters allowed"
+  }
+}
