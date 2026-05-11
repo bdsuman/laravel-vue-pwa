@@ -20,35 +20,19 @@ final class CategoryBuilder extends Builder
     }
 
     /**
-     * Filter by inactive status
-     */
-    public function inactive(): self
-    {
-        return $this->where('is_active', false);
-    }
-
-    /**
      * Filter by parent category
      */
-    public function childrenOf(int $parentId): self
+    public function parent(int $parentId): self
     {
         return $this->where('parent_id', $parentId);
     }
 
     /**
-     * Filter root categories only
+     * Filter by root categories (no parent)
      */
-    public function rootOnly(): self
+    public function root(): self
     {
         return $this->whereNull('parent_id');
-    }
-
-    /**
-     * Order by display order
-     */
-    public function ordered(): self
-    {
-        return $this->orderBy('order')->orderBy('name');
     }
 
     /**
@@ -63,18 +47,26 @@ final class CategoryBuilder extends Builder
     }
 
     /**
-     * With parent relationship
-     */
-    public function withParent(): self
-    {
-        return $this->with('parent');
-    }
-
-    /**
-     * With children relationship
+     * With children
      */
     public function withChildren(): self
     {
         return $this->with('children');
+    }
+
+    /**
+     * Order by latest
+     */
+    public function latest($column = null): self
+    {
+        return parent::latest($column);
+    }
+
+    /**
+     * Order by oldest
+     */
+    public function oldest($column = null): self
+    {
+        return parent::oldest($column);
     }
 }

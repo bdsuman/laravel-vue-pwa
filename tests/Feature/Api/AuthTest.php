@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Tests\Feature\Api;
 
 use App\Models\User;
@@ -9,7 +7,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
-final class AuthTest extends TestCase
+class AuthTest extends TestCase
 {
     use RefreshDatabase;
 

@@ -27,29 +27,22 @@ final class PostController extends Controller
         $posts = $this->postService->getPaginated(
             filters: [
                 'category_id' => $request->input('category_id'),
-                'author_id' => $request->input('author_id'),
-                'is_published' => $request->has('is_published') 
-                    ? $request->boolean('is_published') 
-                    : null,
+                'user_id' => $request->input('user_id'),
                 'search' => $request->input('search'),
-                'sort_by' => $request->input('sort_by', 'created_at'),
-                'sort_order' => $request->input('sort_order', 'desc'),
+                'status' => $request->input('status'),
             ],
             perPage: min((int) $request->input('per_page', 15), 100)
         );
 
-        return $this->successResponse(PostResource::collection($posts->toResponse()->getData()), 'Posts retrieved successfully');
+        return $this->successResponse(PostResource::collection($posts), 'Posts retrieved successfully');
     }
 
     public function store(StorePostRequest $request): JsonResponse
     {
-        $post = $this->postService->create(
-            PostDTO::fromRequest($request),
-            $request->user()->id
-        );
+        $post = $this->postService->create(PostDTO::fromRequest($request));
 
         return $this->successResponse(
-            new PostResource($post->load(['category', 'author'])),
+            new PostResource($post),
             'Post created successfully',
             Response::HTTP_CREATED
         );
@@ -57,38 +50,31 @@ final class PostController extends Controller
 
     public function show(Post $post): JsonResponse
     {
-        $post->load(['category', 'author']);
+        $post->load(['category', 'user']);
         return $this->successResponse(new PostResource($post), 'Post retrieved successfully');
     }
 
     public function update(UpdatePostRequest $request, Post $post): JsonResponse
     {
         $post = $this->postService->update($post, PostDTO::fromRequest($request));
-
-        return $this->successResponse(
-            new PostResource($post->load(['category', 'author'])),
-            'Post updated successfully'
-        );
+        return $this->successResponse(new PostResource($post), 'Post updated successfully');
     }
 
     public function destroy(Post $post): JsonResponse
     {
         $this->postService->delete($post);
-
         return $this->successResponse(null, 'Post deleted successfully');
     }
 
     public function publish(Post $post): JsonResponse
     {
         $post = $this->postService->publish($post);
-
         return $this->successResponse(new PostResource($post), 'Post published successfully');
     }
 
     public function unpublish(Post $post): JsonResponse
     {
         $post = $this->postService->unpublish($post);
-
         return $this->successResponse(new PostResource($post), 'Post unpublished successfully');
     }
 

@@ -20,31 +20,31 @@ final class PostBuilder extends Builder
     }
 
     /**
-     * Filter by unpublished posts
+     * Filter by draft status
      */
-    public function unpublished(): self
+    public function draft(): self
     {
         return $this->where('is_published', false);
     }
 
     /**
+     * Filter by featured status
+     */
+    public function featured(): self
+    {
+        return $this->where('is_featured', true);
+    }
+
+    /**
      * Filter by category
      */
-    public function forCategory(int $categoryId): self
+    public function category(string|int $categorySlugOrId): self
     {
-        return $this->where('category_id', $categoryId);
+        return $this->where('category_id', $categorySlugOrId);
     }
 
     /**
-     * Filter by author
-     */
-    public function byAuthor(int $authorId): self
-    {
-        return $this->where('author_id', $authorId);
-    }
-
-    /**
-     * Search in title and content
+     * Search by title or content
      */
     public function search(string $term): self
     {
@@ -55,39 +55,26 @@ final class PostBuilder extends Builder
     }
 
     /**
+     * With relationships
+     */
+    public function withRelations(): self
+    {
+        return $this->with(['category', 'author', 'tags']);
+    }
+
+    /**
      * Order by latest
      */
-    public function latest(): self
+    public function latest($column = null): self
     {
-        return $this->orderBy('created_at', 'desc');
+        return parent::latest($column);
     }
 
     /**
      * Order by oldest
      */
-    public function oldest(): self
+    public function oldest($column = null): self
     {
-        return $this->orderBy('created_at', 'asc');
-    }
-
-    /**
-     * With related data
-     */
-    public function withRelations(): self
-    {
-        return $this->with(['category', 'author']);
-    }
-
-    /**
-     * Filter by date range
-     */
-    public function betweenDates(
-        \DateTimeInterface $start,
-        \DateTimeInterface $end
-    ): self {
-        return $this->whereBetween('created_at', [
-            $start->format('Y-m-d H:i:s'),
-            $end->format('Y-m-d H:i:s'),
-        ]);
+        return parent::oldest($column);
     }
 }

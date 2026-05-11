@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-use App\DTOs\PostDTO;
+use App\DataTransferObjects\PostDTO;
 use App\Models\Post;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Cache;
 
 final class PostService
 {
@@ -24,27 +23,24 @@ final class PostService
     public function getPaginated(array $filters = [], int $perPage = 15): LengthAwarePaginator
     {
         $query = $this->model->with('category', 'user');
-        $cacheKey = 'posts_' . md5(json_encode($filters)) . '_page_' . request('page', 1);
 
-        return Cache::remember($cacheKey, 300, function () use ($query, $filters) {
-            if (!empty($filters['category_id'])) {
-                $query->where('category_id', $filters['category_id']);
-            }
+        if (!empty($filters['category_id'])) {
+            $query->where('category_id', $filters['category_id']);
+        }
 
-            if (!empty($filters['user_id'])) {
-                $query->where('user_id', $filters['user_id']);
-            }
+        if (!empty($filters['user_id'])) {
+            $query->where('user_id', $filters['user_id']);
+        }
 
-            if (!empty($filters['status'])) {
-                $query->where('status', $filters['status']);
-            }
+        if (!empty($filters['status'])) {
+            $query->where('status', $filters['status']);
+        }
 
-            if (!empty($filters['search'])) {
-                $query->where('title', 'like', '%' . $filters['search'] . '%');
-            }
+        if (!empty($filters['search'])) {
+            $query->where('title', 'like', '%' . $filters['search'] . '%');
+        }
 
-            return $query->latest()->paginate(15);
-        });
+        return $query->latest()->paginate($perPage);
     }
 
     /**
@@ -60,18 +56,14 @@ final class PostService
             'status' => $dto->status ?? 'draft',
         ]);
 
-        Cache::flush();
-
         return $post->load('category', 'user');
     }
 
     /**
      * Update post
      */
-    public function update(int $id, PostDTO $dto): Post
+    public function update(Post $post, PostDTO $dto): Post
     {
-        $post = $this->model->findOrFail($id);
-        
         $post->update([
             'title' => $dto->title,
             'content' => $dto->content,
@@ -79,21 +71,33 @@ final class PostService
             'status' => $dto->status ?? $post->status,
         ]);
 
-        Cache::flush();
-
         return $post->fresh()->load('category', 'user');
     }
 
     /**
      * Delete post
      */
-    public function delete(int $id): bool
+    public function delete(Post $post): bool
     {
-        $post = $this->model->findOrFail($id);
-        
-        Cache::flush();
-
         return $post->delete();
+    }
+
+    /**
+     * Publish post
+     */
+    public function publish(Post $post): Post
+    {
+        $post->update(['is_published' => true]);
+        return $post->fresh()->load('category', 'user');
+    }
+
+    /**
+     * Unpublish post
+     */
+    public function unpublish(Post $post): Post
+    {
+        $post->update(['is_published' => false]);
+        return $post->fresh()->load('category', 'user');
     }
 
     /**
@@ -101,8 +105,6 @@ final class PostService
      */
     public function findById(int $id): ?Post
     {
-        return Cache::remember("post_{$id}", 300, function () use ($id) {
-            return $this->model->with('category', 'user')->find($id);
-        });
+        return $this->model->with('category', 'user')->find($id);
     }
 }

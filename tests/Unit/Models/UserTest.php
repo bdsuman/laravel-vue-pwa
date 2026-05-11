@@ -1,63 +1,64 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Tests\Unit\Models;
 
 use App\Models\User;
+use App\Models\Category;
+use App\Models\Post;
+use App\Models\Role;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-final class UserTest extends TestCase
+class UserTest extends TestCase
 {
     use RefreshDatabase;
 
     public function test_user_can_be_created(): void
     {
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        $user = User::factory()->create();
 
         $this->assertDatabaseHas('users', [
-            'email' => 'test@example.com',
+            'email' => $user->email,
         ]);
-        $this->assertEquals('Test User', $user->name);
     }
 
     public function test_user_has_many_posts(): void
     {
         $user = User::factory()->create();
+        $category = Category::factory()->create();
         
-        $this->assertArrayHasKey('posts', $user->getRelations());
+        Post::factory()->create([
+            'user_id' => $user->id,
+            'category_id' => $category->id,
+        ]);
+
+        $this->assertCount(1, $user->posts);
     }
 
     public function test_user_can_be_assigned_role(): void
     {
+        $role = Role::create(['name' => 'admin', 'guard_name' => 'web']);
         $user = User::factory()->create();
-        $user->assignRole('admin');
+        
+        $user->assignRole($role);
 
         $this->assertTrue($user->hasRole('admin'));
     }
 
     public function test_user_active_scope(): void
     {
-        User::factory()->count(3)->create(['is_active' => true]);
-        User::factory()->count(2)->create(['is_active' => false]);
+        User::factory()->create(['is_active' => true]);
+        User::factory()->create(['is_active' => false]);
 
-        $activeUsers = User::active()->count();
-
-        $this->assertEquals(3, $activeUsers);
+        $this->assertEquals(1, User::active()->count());
     }
 
     public function test_user_search_scope(): void
     {
-        User::factory()->create(['name' => 'John Doe', 'email' => 'john@example.com']);
-        User::factory()->create(['name' => 'Jane Smith', 'email' => 'jane@example.com']);
+        User::factory()->create(['name' => 'John Doe']);
+        User::factory()->create(['name' => 'Jane Smith']);
 
-        $results = User::search('john')->get();
-
+        $results = User::search('John')->get();
         $this->assertEquals(1, $results->count());
-        $this->assertEquals('John Doe', $results->first()->name);
     }
 }

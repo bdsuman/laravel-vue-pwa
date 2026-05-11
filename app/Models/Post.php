@@ -15,6 +15,8 @@ final class Post extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
+        'category_id',
         'title',
         'slug',
         'content',
@@ -22,8 +24,6 @@ final class Post extends Model
         'featured_image',
         'is_published',
         'published_at',
-        'author_id',
-        'category_id',
     ];
 
     protected function casts(): array
@@ -34,6 +34,15 @@ final class Post extends Model
         ];
     }
 
+    protected static function booted(): void
+    {
+        static::creating(function (Post $post) {
+            if (empty($post->slug)) {
+                $post->slug = \Illuminate\Support\Str::slug($post->title);
+            }
+        });
+    }
+
     public function newEloquentBuilder($query): PostBuilder
     {
         return new PostBuilder($query);
@@ -41,7 +50,12 @@ final class Post extends Model
 
     public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'author_id');
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function category(): BelongsTo

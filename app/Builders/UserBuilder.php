@@ -57,10 +57,10 @@ final class UserBuilder extends Builder
     }
 
     /**
-     * Order by latest
+     * Order by latest (extends parent method)
      */
-    public function latest(): self
+    public function latest($column = null): self
     {
-        return $this->orderBy('created_at', 'desc');
+        return parent::latest($column);
     }
 }

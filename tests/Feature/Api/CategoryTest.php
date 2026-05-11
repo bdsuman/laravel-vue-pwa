@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Tests\Feature\Api;
 
 use App\Models\Category;
@@ -10,11 +8,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
-final class CategoryTest extends TestCase
+class CategoryTest extends TestCase
 {
     use RefreshDatabase;
 
-    private User $user;
+    protected User $user;
 
     protected function setUp(): void
     {
@@ -24,6 +22,8 @@ final class CategoryTest extends TestCase
 
     public function test_can_list_categories(): void
     {
+        Sanctum::actingAs($this->user);
+        
         Category::factory()->count(3)->create();
 
         $response = $this->getJson('/api/categories');
@@ -32,6 +32,7 @@ final class CategoryTest extends TestCase
             ->assertJsonStructure([
                 'success',
                 'data',
+                'meta',
             ]);
     }
 
@@ -42,6 +43,7 @@ final class CategoryTest extends TestCase
         $response = $this->postJson('/api/categories', [
             'name' => 'Test Category',
             'slug' => 'test-category',
+            'is_active' => true,
         ]);
 
         $response->assertStatus(201)
@@ -53,6 +55,7 @@ final class CategoryTest extends TestCase
     public function test_can_update_category(): void
     {
         Sanctum::actingAs($this->user);
+        
         $category = Category::factory()->create();
 
         $response = $this->putJson("/api/categories/{$category->id}", [
@@ -66,6 +69,7 @@ final class CategoryTest extends TestCase
     public function test_can_delete_category(): void
     {
         Sanctum::actingAs($this->user);
+        
         $category = Category::factory()->create();
 
         $response = $this->deleteJson("/api/categories/{$category->id}");
@@ -77,10 +81,12 @@ final class CategoryTest extends TestCase
     public function test_can_toggle_category_status(): void
     {
         Sanctum::actingAs($this->user);
+        
         $category = Category::factory()->create(['is_active' => true]);
 
         $response = $this->postJson("/api/categories/{$category->id}/toggle");
 
         $response->assertStatus(200);
+        $this->assertDatabaseHas('categories', ['id' => $category->id, 'is_active' => false]);
     }
 }
