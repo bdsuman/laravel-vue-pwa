@@ -7,11 +7,10 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
-use App\Http\Resources\CategoryResource;
+use App\Models\Category;
 use App\Services\CategoryService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 final class CategoryController extends Controller
 {
@@ -21,12 +20,15 @@ final class CategoryController extends Controller
 
     public function index(Request $request): JsonResponse
     {
-        $perPage = $request->input('per_page', 15);
-        $categories = $this->categoryService->getPaginated($perPage);
+        $categories = $this->categoryService->getAll(
+            perPage: (int) $request->get('per_page', 15),
+            search: $request->get('search'),
+            activeOnly: $request->boolean('active_only')
+        );
 
         return response()->json([
             'success' => true,
-            'data' => CategoryResource::collection($categories),
+            'data' => $categories->items(),
             'meta' => [
                 'current_page' => $categories->currentPage(),
                 'last_page' => $categories->lastPage(),
@@ -42,60 +44,56 @@ final class CategoryController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => new CategoryResource($category),
             'message' => 'Category created successfully',
-        ], Response::HTTP_CREATED);
+            'data' => $category,
+        ], 201);
     }
 
     public function show(int $id): JsonResponse
     {
         $category = $this->categoryService->findById($id);
 
-        if (! $category) {
+        if (!$category) {
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found',
-            ], Response::HTTP_NOT_FOUND);
+            ], 404);
         }
 
         return response()->json([
             'success' => true,
-            'data' => new CategoryResource($category),
+            'data' => $category,
         ]);
     }
 
     public function update(UpdateCategoryRequest $request, int $id): JsonResponse
     {
-        $category = $this->categoryService->findById($id);
+        $category = $this->categoryService->update($id, $request->validated());
 
-        if (! $category) {
+        if (!$category) {
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found',
-            ], Response::HTTP_NOT_FOUND);
+            ], 404);
         }
-
-        $updated = $this->categoryService->update($category, $request->validated());
 
         return response()->json([
             'success' => true,
-            'data' => new CategoryResource($updated),
             'message' => 'Category updated successfully',
+            'data' => $category,
         ]);
     }
 
     public function destroy(int $id): JsonResponse
     {
-        $category = $this->categoryService->findById($id);
+        $deleted = $this->categoryService->delete($id);
 
-        if (! $category) {
+        if (!$deleted) {
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found',
-            ], Response::HTTP_NOT_FOUND);
+            ], 404);
         }
-
-        $this->categoryService->delete($category);
 
         return response()->json([
             'success' => true,
@@ -105,21 +103,19 @@ final class CategoryController extends Controller
 
     public function toggle(int $id): JsonResponse
     {
-        $category = $this->categoryService->findById($id);
+        $category = $this->categoryService->toggleStatus($id);
 
-        if (! $category) {
+        if (!$category) {
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found',
-            ], Response::HTTP_NOT_FOUND);
+            ], 404);
         }
-
-        $updated = $this->categoryService->toggleActive($category);
 
         return response()->json([
             'success' => true,
-            'data' => new CategoryResource($updated),
-            'message' => $updated->is_active ? 'Category activated' : 'Category deactivated',
+            'message' => 'Category status toggled successfully',
+            'data' => $category,
         ]);
     }
 }

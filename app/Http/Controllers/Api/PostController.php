@@ -8,12 +8,11 @@ use App\DataTransferObjects\PostDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
-use App\Http\Resources\PostResource;
 use App\Models\Post;
 use App\Services\PostService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
 
 final class PostController extends Controller
 {
@@ -35,7 +34,7 @@ final class PostController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => PostResource::collection($posts),
+            'data' => $posts->items(),
             'meta' => [
                 'current_page' => $posts->currentPage(),
                 'last_page' => $posts->lastPage(),
@@ -47,13 +46,20 @@ final class PostController extends Controller
 
     public function store(StorePostRequest $request): JsonResponse
     {
-        $post = $this->postService->create(PostDTO::fromRequest($request));
+        $dto = PostDTO::fromRequest($request);
+        
+        // Set user_id from authenticated user if not provided
+        $dto = PostDTO::fromArray(array_merge($dto->toArray(), [
+            'user_id' => Auth::id(),
+        ]));
+
+        $post = $this->postService->create($dto);
 
         return response()->json([
             'success' => true,
             'message' => 'Post created successfully',
-            'data' => new PostResource($post),
-        ], Response::HTTP_CREATED);
+            'data' => $post,
+        ], 201);
     }
 
     public function show(Post $post): JsonResponse
@@ -62,7 +68,7 @@ final class PostController extends Controller
         
         return response()->json([
             'success' => true,
-            'data' => new PostResource($post),
+            'data' => $post,
         ]);
     }
 
@@ -73,7 +79,7 @@ final class PostController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Post updated successfully',
-            'data' => new PostResource($post),
+            'data' => $post,
         ]);
     }
 
@@ -94,18 +100,7 @@ final class PostController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'Post published successfully',
-            'data' => new PostResource($post),
-        ]);
-    }
-
-    public function unpublish(Post $post): JsonResponse
-    {
-        $post = $this->postService->unpublish($post);
-        
-        return response()->json([
-            'success' => true,
-            'message' => 'Post unpublished successfully',
-            'data' => new PostResource($post),
+            'data' => $post,
         ]);
     }
 }
