@@ -43,19 +43,85 @@ services:
       - redis_data:/data
     networks:
       - laravel-vue-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
 
   postgres:
     image: postgres:16-alpine
-    environment:
-      POSTGRES_DB: laravel_vue_pwa
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: secret
+    env_file:
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5433:5432"
     networks:
       - laravel-vue-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"
+      - "11125:1025"
+    networks:
+      - laravel-vue-network
+
+  supervisor:
+    build:
+      context: .
+      target: app
+    image: laravel-vue-pwa-php
+    working_dir: /app
+    volumes:
+      - ./storage:/app/storage
+      - ./bootstrap/cache:/app/bootstrap/cache
+      - ./docker/supervisor:/etc/supervisor/conf.d:ro
+    depends_on:
+      redis:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    networks:
+      - laravel-vue-network
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "supervisorctl status | grep -q RUNNING || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    command: >
+      sh -c "mkdir -p /app/storage/logs &&
+             chown -R www-data:www-data /app/storage &&
+             /usr/bin/supervisord -c /etc/supervisor/supervisord.conf"
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    ports:
+      - "9443:9443"
+      - "9000:9000"
+    volumes:
+      - ./docker/portainer/data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - laravel-vue-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--spider", "http://localhost:9000/api/system/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
 networks:
   laravel-vue-network:

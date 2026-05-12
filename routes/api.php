@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\PostController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\FileUploadController;
+use App\Http\Controllers\Api\ForgotPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,10 +13,13 @@ use App\Http\Controllers\Api\FileUploadController;
 |--------------------------------------------------------------------------
 */
 
-// Public routes
+// Public auth routes
 Route::prefix('auth')->group(function () {
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/forgot-password', [ForgotPasswordController::class, 'sendOtp']);
+    Route::post('/verify-otp', [ForgotPasswordController::class, 'verifyOtp']);
+    Route::post('/reset-password', [ForgotPasswordController::class, 'resetPassword']);
 });
 
 // Protected routes
@@ -31,7 +35,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
     Route::post('/posts/{post}/publish', [PostController::class, 'publish'])->name('posts.publish');
-    Route::post('/posts/{post}/unpublish', [PostController::class, 'unpublish'])->name('posts.unpublish');
     
     // Categories
     Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');

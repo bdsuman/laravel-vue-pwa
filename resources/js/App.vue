@@ -3,6 +3,7 @@ import { RouterView, RouterLink } from 'vue-router'
 import { useAuthStore } from './stores/auth'
 import { useI18n } from 'vue-i18n'
 import LanguageSwitcher from './components/LanguageSwitcher.vue'
+import FloatingLanguageSwitcher from './components/FloatingLanguageSwitcher.vue'
 import { setLocale } from './i18n'
 
 const { t, locale } = useI18n()
@@ -71,5 +72,8 @@ const logout = async () => {
     <main class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
       <RouterView />
     </main>
+    
+    <!-- Floating Language Switcher -->
+    <FloatingLanguageSwitcher />
   </div>
 </template>
