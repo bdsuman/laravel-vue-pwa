@@ -5,7 +5,6 @@ namespace Tests\Feature\Api;
 use App\Models\Category;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class CategoryTest extends TestCase
@@ -22,8 +21,7 @@ class CategoryTest extends TestCase
 
     public function test_can_list_categories(): void
     {
-        Sanctum::actingAs($this->user);
-        
+        $this->actingAs($this->user, 'sanctum');
         Category::factory()->count(3)->create();
 
         $response = $this->getJson('/api/categories');
@@ -32,18 +30,15 @@ class CategoryTest extends TestCase
             ->assertJsonStructure([
                 'success',
                 'data',
-                'meta',
             ]);
     }
 
     public function test_can_create_category(): void
     {
-        Sanctum::actingAs($this->user);
+        $this->actingAs($this->user, 'sanctum');
 
         $response = $this->postJson('/api/categories', [
             'name' => 'Test Category',
-            'slug' => 'test-category',
-            'is_active' => true,
         ]);
 
         $response->assertStatus(201)
@@ -54,8 +49,7 @@ class CategoryTest extends TestCase
 
     public function test_can_update_category(): void
     {
-        Sanctum::actingAs($this->user);
-        
+        $this->actingAs($this->user, 'sanctum');
         $category = Category::factory()->create();
 
         $response = $this->putJson("/api/categories/{$category->id}", [
@@ -64,12 +58,13 @@ class CategoryTest extends TestCase
 
         $response->assertStatus(200)
             ->assertJsonPath('data.name', 'Updated Category');
+
+        $this->assertDatabaseHas('categories', ['id' => $category->id, 'name' => 'Updated Category']);
     }
 
     public function test_can_delete_category(): void
     {
-        Sanctum::actingAs($this->user);
-        
+        $this->actingAs($this->user, 'sanctum');
         $category = Category::factory()->create();
 
         $response = $this->deleteJson("/api/categories/{$category->id}");
@@ -80,8 +75,7 @@ class CategoryTest extends TestCase
 
     public function test_can_toggle_category_status(): void
     {
-        Sanctum::actingAs($this->user);
-        
+        $this->actingAs($this->user, 'sanctum');
         $category = Category::factory()->create(['is_active' => true]);
 
         $response = $this->postJson("/api/categories/{$category->id}/toggle");

@@ -14,11 +14,6 @@ final class Category extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
     protected $fillable = [
         'name',
         'slug',
@@ -29,11 +24,6 @@ final class Category extends Model
         'is_active',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
@@ -42,49 +32,31 @@ final class Category extends Model
         ];
     }
 
-    /**
-     * Create a new Eloquent query builder for the model.
-     */
     public function newEloquentBuilder($query): CategoryBuilder
     {
         return new CategoryBuilder($query);
     }
 
-    /**
-     * Get the parent category.
-     */
     public function parent(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'parent_id');
     }
 
-    /**
-     * Get child categories.
-     */
     public function children(): HasMany
     {
         return $this->hasMany(Category::class, 'parent_id');
     }
 
-    /**
-     * Get posts in this category.
-     */
     public function posts(): HasMany
     {
         return $this->hasMany(Post::class);
     }
 
-    /**
-     * Scope for active categories.
-     */
     public function scopeActive($query)
     {
         return $query->where('is_active', true);
     }
 
-    /**
-     * Scope for root categories only.
-     */
     public function scopeRootOnly($query)
     {
         return $query->whereNull('parent_id');

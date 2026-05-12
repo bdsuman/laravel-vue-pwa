@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Api;
 
-use App\DataTransferObjects\CategoryDTO;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
 use App\Http\Resources\CategoryResource;
-use App\Models\Category;
 use App\Services\CategoryService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -22,94 +21,105 @@ final class CategoryController extends Controller
 
     public function index(Request $request): JsonResponse
     {
-        $categories = $request->boolean('hierarchy')
-            ? $this->categoryService->getWithHierarchy()
-            : $this->categoryService->getPaginated(
-                min((int) $request->input('per_page', 15), 100)
-            );
+        $perPage = $request->input('per_page', 15);
+        $categories = $this->categoryService->getPaginated($perPage);
 
-        return $this->successResponse(
-            $request->boolean('hierarchy')
-                ? CategoryResource::collection($categories)
-                : CategoryResource::collection($categories->toResponse()->getData()),
-            'Categories retrieved successfully'
-        );
+        return response()->json([
+            'success' => true,
+            'data' => CategoryResource::collection($categories),
+            'meta' => [
+                'current_page' => $categories->currentPage(),
+                'last_page' => $categories->lastPage(),
+                'per_page' => $categories->perPage(),
+                'total' => $categories->total(),
+            ],
+        ]);
     }
 
     public function store(StoreCategoryRequest $request): JsonResponse
     {
-        $category = $this->categoryService->create(
-            CategoryDTO::fromRequest($request)
-        );
+        $category = $this->categoryService->create($request->validated());
 
-        return $this->successResponse(
-            new CategoryResource($category),
-            'Category created successfully',
-            Response::HTTP_CREATED
-        );
+        return response()->json([
+            'success' => true,
+            'data' => new CategoryResource($category),
+            'message' => 'Category created successfully',
+        ], Response::HTTP_CREATED);
     }
 
-    public function show(Category $category): JsonResponse
+    public function show(int $id): JsonResponse
     {
-        return $this->successResponse(
-            new CategoryResource($category->load(['parent', 'children'])),
-            'Category retrieved successfully'
-        );
+        $category = $this->categoryService->findById($id);
+
+        if (! $category) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Category not found',
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data' => new CategoryResource($category),
+        ]);
     }
 
-    public function update(StoreCategoryRequest $request, Category $category): JsonResponse
+    public function update(UpdateCategoryRequest $request, int $id): JsonResponse
     {
-        $category = $this->categoryService->update($category, CategoryDTO::fromRequest($request));
+        $category = $this->categoryService->findById($id);
 
-        return $this->successResponse(
-            new CategoryResource($category),
-            'Category updated successfully'
-        );
+        if (! $category) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Category not found',
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        $updated = $this->categoryService->update($category, $request->validated());
+
+        return response()->json([
+            'success' => true,
+            'data' => new CategoryResource($updated),
+            'message' => 'Category updated successfully',
+        ]);
     }
 
-    public function destroy(Category $category): JsonResponse
+    public function destroy(int $id): JsonResponse
     {
-        if ($category->posts()->count() > 0) {
-            return $this->errorResponse(
-                'Cannot delete category with associated posts',
-                Response::HTTP_CONFLICT
-            );
+        $category = $this->categoryService->findById($id);
+
+        if (! $category) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Category not found',
+            ], Response::HTTP_NOT_FOUND);
         }
 
         $this->categoryService->delete($category);
 
-        return $this->successResponse(null, 'Category deleted successfully');
-    }
-
-    public function toggle(Category $category): JsonResponse
-    {
-        $category = $this->categoryService->toggleActive($category);
-
-        return $this->successResponse(
-            new CategoryResource($category),
-            'Category status toggled successfully'
-        );
-    }
-
-    protected function successResponse(
-        mixed $data = null,
-        string $message = 'Success',
-        int $status = Response::HTTP_OK
-    ): JsonResponse {
         return response()->json([
             'success' => true,
-            'message' => $message,
-            'data' => $data,
-        ], $status);
+            'message' => 'Category deleted successfully',
+        ]);
     }
 
-    protected function errorResponse(
-        string $message = 'Error',
-        int $status = Response::HTTP_BAD_REQUEST
-    ): JsonResponse {
+    public function toggle(int $id): JsonResponse
+    {
+        $category = $this->categoryService->findById($id);
+
+        if (! $category) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Category not found',
+            ], Response::HTTP_NOT_FOUND);
+        }
+
+        $updated = $this->categoryService->toggleActive($category);
+
         return response()->json([
-            'success' => false,
-            'message' => $message,
-        ], $status);
+            'success' => true,
+            'data' => new CategoryResource($updated),
+            'message' => $updated->is_active ? 'Category activated' : 'Category deactivated',
+        ]);
     }
 }

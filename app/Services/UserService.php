@@ -7,7 +7,6 @@ namespace App\Services;
 use App\DTOs\UserDTO;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Cache;
 
 final class UserService
 {
@@ -23,16 +22,13 @@ final class UserService
      */
     public function create(UserDTO $dto): User
     {
-        $user = $this->model->create([
+        return $this->model->create([
             'name' => $dto->name,
             'email' => $dto->email,
             'password' => Hash::make($dto->password),
+            'avatar' => $dto->avatar,
+            'is_active' => $dto->is_active,
         ]);
-
-        // Clear cache
-        Cache::forget('users_list');
-
-        return $user;
     }
 
     /**
@@ -51,33 +47,29 @@ final class UserService
             $data['password'] = Hash::make($dto->password);
         }
 
-        $user->update($data);
+        if ($dto->avatar !== null) {
+            $data['avatar'] = $dto->avatar;
+        }
 
-        // Clear cache
-        Cache::forget('users_list');
-        Cache::forget("user_{$id}");
+        $user->update($data);
 
         return $user->fresh();
     }
 
     /**
-     * Get paginated users list with caching
+     * Get paginated users list
      */
     public function getPaginated(int $perPage = 15): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-        return Cache::remember('users_list', 300, function () {
-            return $this->model->latest()->paginate(15);
-        });
+        return $this->model->latest()->paginate($perPage);
     }
 
     /**
-     * Find user by ID with caching
+     * Find user by ID
      */
     public function findById(int $id): ?User
     {
-        return Cache::remember("user_{$id}", 300, function () use ($id) {
-            return $this->model->find($id);
-        });
+        return $this->model->find($id);
     }
 
     /**
@@ -86,11 +78,6 @@ final class UserService
     public function delete(int $id): bool
     {
         $user = $this->model->findOrFail($id);
-        
-        // Clear cache
-        Cache::forget('users_list');
-        Cache::forget("user_{$id}");
-
         return $user->delete();
     }
 }

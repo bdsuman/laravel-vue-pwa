@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-use App\DTOs\CategoryDTO;
 use App\Models\Category;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Cache;
+use Illuminate\Database\Eloquent\Collection;
 
 final class CategoryService
 {
@@ -18,84 +17,70 @@ final class CategoryService
         $this->model = $model ?? new Category();
     }
 
-    /**
-     * Get paginated categories
-     */
     public function getPaginated(int $perPage = 15): LengthAwarePaginator
     {
-        return Cache::remember('categories_list', 300, function () {
-            return $this->model->withCount('posts')->latest()->paginate(15);
-        });
+        return $this->model->withCount('posts')->latest()->paginate($perPage);
     }
 
-    /**
-     * Get all categories (cached)
-     */
-    public function getAll(): \Illuminate\Database\Eloquent\Collection
+    public function getAll(): Collection
     {
-        return Cache::remember('categories_all', 600, function () {
-            return $this->model->orderBy('name')->get();
-        });
+        return $this->model->orderBy('name')->get();
     }
 
-    /**
-     * Create new category
-     */
-    public function create(CategoryDTO $dto): Category
+    public function getWithHierarchy(): Collection
+    {
+        return $this->model->with(['parent', 'children'])->whereNull('parent_id')->get();
+    }
+
+    public function create(array $data): Category
     {
         $category = $this->model->create([
-            'name' => $dto->name,
-            'slug' => \Illuminate\Support\Str::slug($dto->name),
-            'description' => $dto->description,
+            'name' => $data['name'],
+            'slug' => \Illuminate\Support\Str::slug($data['name']),
+            'description' => $data['description'] ?? null,
+            'parent_id' => $data['parent_id'] ?? null,
+            'is_active' => $data['is_active'] ?? true,
         ]);
-
-        Cache::forget('categories_list');
-        Cache::forget('categories_all');
 
         return $category;
     }
 
-    /**
-     * Update category
-     */
-    public function update(int $id, CategoryDTO $dto): Category
+    public function update(Category $category, array $data): Category
     {
-        $category = $this->model->findOrFail($id);
+        $updateData = [];
         
-        $category->update([
-            'name' => $dto->name,
-            'slug' => \Illuminate\Support\Str::slug($dto->name),
-            'description' => $dto->description,
-        ]);
+        if (isset($data['name'])) {
+            $updateData['name'] = $data['name'];
+            $updateData['slug'] = \Illuminate\Support\Str::slug($data['name']);
+        }
+        if (array_key_exists('description', $data)) {
+            $updateData['description'] = $data['description'];
+        }
+        if (array_key_exists('parent_id', $data)) {
+            $updateData['parent_id'] = $data['parent_id'];
+        }
+        if (isset($data['is_active'])) {
+            $updateData['is_active'] = $data['is_active'];
+        }
 
-        Cache::forget('categories_list');
-        Cache::forget('categories_all');
-        Cache::forget("category_{$id}");
+        $category->update($updateData);
 
         return $category->fresh();
     }
 
-    /**
-     * Delete category
-     */
-    public function delete(int $id): bool
+    public function delete(Category $category): bool
     {
-        $category = $this->model->findOrFail($id);
-        
-        Cache::forget('categories_list');
-        Cache::forget('categories_all');
-        Cache::forget("category_{$id}");
-
         return $category->delete();
     }
 
-    /**
-     * Find by ID
-     */
+    public function toggleActive(Category $category): Category
+    {
+        $category->update(['is_active' => !$category->is_active]);
+        return $category->fresh();
+    }
+
     public function findById(int $id): ?Category
     {
-        return Cache::remember("category_{$id}", 300, function () use ($id) {
-            return $this->model->find($id);
-        });
+        return $this->model->find($id);
     }
 }
