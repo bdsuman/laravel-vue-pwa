@@ -1,0 +1,2584 @@
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/home/bdsuman/Projects/laravel-vue-pwa/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000]: General error: 1 no such table: cache (Connection: sqlite, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[08006] [7] connection to server at "postgres" (172.19.0.4), port 5432 failed: FATAL:  password authentication failed for user "postgres" (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+37 vendor frames [22m
+
+  38  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+cp: unrecognized option: queue=default,emails
+cp: unrecognized option: queue=default,emails
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+BusyBox v1.37.0 (2025-12-16 14:19:28 UTC) multi-call binary.
+
+Usage: cp [-arPLHpfinlsTu] SOURCE DEST
+or: cp [-arPLHpfinlsu] SOURCE... { -t DIRECTORY | DIRECTORY }
+
+Copy SOURCEs to DEST
+
+	-a	Same as -dpR
+	-R,-r	Recurse
+	-d,-P	Preserve symlinks (default if -R)
+	-L	Follow all symlinks
+	-H	Follow symlinks on command line
+	-p	Preserve file attributes if possible
+	-f	Overwrite
+	-i	Prompt before overwrite
+	-n	Don't overwrite
+	-l,-s	Create (sym)links
+	-T	Refuse to copy if DEST is a directory
+	-t DIR	Copy all SOURCEs into DIR
+	-u	Copy only newer files
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+supervisor: couldn't exec /docker/supervisor/queue-default.sh: ENOENT
+supervisor: child process was not spawned
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "cache" does not exist
+LINE 1: select * from "cache" where "key" in ($1)
+                      ^ (Connection: pgsql, SQL: select * from "cache" where "key" in (laravel_vue_pwa_cache_illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
