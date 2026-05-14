@@ -59,6 +59,9 @@ RUN docker-php-ext-install -j$(nproc) \
 
 RUN pecl install redis && docker-php-ext-enable redis
 
+# Install supervisor for queue workers
+RUN apk add --no-cache supervisor
+
 COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app

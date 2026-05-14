@@ -24,7 +24,9 @@ Thumbs.db
 # Docker
 Dockerfile
 docker-compose*.yml
-docker/
+docker/*
+!docker/nginx/default.conf
+!docker/nginx/nginx.conf
 
 # Environment
 .env
